@@ -1,0 +1,27 @@
+{
+	"name": "popupalerts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "eslint modules/scripts/* && stylelint modules/styles/*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@bitbucket.org/wikiworks42/popupalerts.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/wikiworks42/popupalerts#readme",
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-plugin-jquery": "^1.5.0",
+		"eslint-plugin-qunit": "^4.0.0",
+		"eslint-plugin-standard": "^4.0.0",
+		"stylelint": "^12.0.1",
+		"stylelint-config-wikimedia": "0.7.0",
+		"eslint-plugin-no-jquery": "^2.3.1",
+		"eslint-config-wikimedia": "0.15.0",
+		"eslint-plugin-vue": "^6.1.2"
+	}
+}
