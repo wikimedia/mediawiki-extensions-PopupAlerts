@@ -1,10 +1,11 @@
 {
+	"private": true,
 	"name": "popupalerts",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "eslint modules/scripts/* && stylelint modules/styles/*"
+		"test": "eslint modules/scripts/* && stylelint modules/styles/* && grunt test"
 	},
 	"repository": {
 		"type": "git",
@@ -14,6 +15,8 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/wikiworks42/popupalerts#readme",
 	"devDependencies": {
+		"grunt": "1.2.1",
+		"grunt-banana-checker": "0.9.0",
 		"eslint": "^6.8.0",
 		"eslint-plugin-jquery": "^1.5.0",
 		"eslint-plugin-qunit": "^4.0.0",
