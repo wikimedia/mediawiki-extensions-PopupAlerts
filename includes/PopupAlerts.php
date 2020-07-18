@@ -9,9 +9,9 @@ use PPFrame;
 class PopupAlerts {
 
 	/**
-	 * @param Parser  $parser
-	 * @param array    $args
+	 * @param Parser $parser
 	 * @param PPFrame $frame
+	 * @param array $args
 	 *
 	 * @return string
 	 */
