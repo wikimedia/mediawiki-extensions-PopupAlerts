@@ -3,8 +3,7 @@
 	"extends": [
 		"wikimedia/client",
 		"wikimedia/jquery",
-		"wikimedia/mediawiki",
-		"plugin:vue/recommended"
+		"wikimedia/mediawiki"
 	],
 	"env": {
 		"browser": true
@@ -27,10 +26,6 @@
 			"as-needed"
 		],
 		"max-len": "off",
-		"no-jquery/no-global-selector": "off",
-		"vue/html-indent": [
-			"warn",
-			"tab"
-		]
+		"no-jquery/no-global-selector": "off"
 	}
 }
