@@ -9,14 +9,9 @@
 		"browser": true
 	},
 	"globals": {
-		"mw": false,
-		"$": false,
 		"mediaWiki": false,
 		"jQuery": false,
-		"ve": false,
-		"require": "readonly",
-		"module": "readonly",
-		"OO": "readonly"
+		"ve": false
 	},
 	"rules": {
 		"linebreak-style": "off",
