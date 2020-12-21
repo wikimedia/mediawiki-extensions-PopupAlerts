@@ -4,6 +4,7 @@
 
 	/**
 	 * Popup alerts manager class
+	 *
 	 * @class
 	 * @constructor
 	 */
@@ -17,6 +18,7 @@
 
 	/**
 	 * Cookie prefix constant
+	 *
 	 * @constant
 	 * @static
 	 * @type {string}
@@ -25,6 +27,7 @@
 
 	/**
 	 * Binds necessary event handlers
+	 *
 	 */
 	PopupAlertsManager.prototype.bindHandlers = function () {
 		$( document ).on( 'keyup', this.onKeyUp.bind( this ) );
@@ -32,6 +35,7 @@
 
 	/**
 	 * Keyup handler to support ESC key
+	 *
 	 * @param {Event} event
 	 */
 	PopupAlertsManager.prototype.onKeyUp = function ( event ) {
@@ -42,24 +46,36 @@
 	};
 
 	/**
+	 * Forges new PopupAlert instance from source object
+	 *
+	 * @param {Object} source
+	 * @return {mw.PopupAlert}
+	 */
+	PopupAlertsManager.prototype.forgePopupAlert = function ( source ) {
+		return new mw.PopupAlert( {
+			hash: $( source ).data( 'hash' ),
+			content: $( source ).html(),
+			expire: $( source ).data( 'expire' )
+		} );
+	};
+
+	/**
 	 * Looks for popups on the page
+	 *
 	 */
 	PopupAlertsManager.prototype.findPopups = function () {
 		var $sources = $( '.popup-alerts-source' ),
 			self = this;
 		if ( $sources.length ) {
 			$sources.each( function ( i, source ) {
-				self.popupSources.push( new mw.PopupAlert( {
-					hash: $( source ).data( 'hash' ),
-					content: $( source ).html(),
-					expire: $( source ).data( 'expire' )
-				} ) );
+				self.popupSources.push( this.forgePopupAlert( source ) );
 			} );
 		}
 	};
 
 	/**
 	 * Tries to find a candidate to be displayed
+	 *
 	 */
 	PopupAlertsManager.prototype.maybeDisplay = function () {
 		if ( !this.popupSources.length ) {

@@ -66,5 +66,20 @@
 		"localBasePath": "",
 		"remoteExtPath": "PopupAlerts"
 	},
+	"QUnitTestModule": {
+		"localBasePath": "",
+		"remoteExtPath": "PopupAlerts",
+		"templates": {
+			"popup.mustache": "templates/popup.mustache"
+		},
+		"scripts": [
+			"tests/qunit/ext.popupalerts.alert.test.js",
+			"tests/qunit/ext.popupalerts.manager.test.js"
+		],
+		"dependencies": [
+			"ext.popupalerts.alert",
+			"ext.popupalerts.manager"
+		]
+	},
 	"manifest_version": 2
 }

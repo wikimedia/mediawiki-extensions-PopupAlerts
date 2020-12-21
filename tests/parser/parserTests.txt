@@ -1,0 +1,42 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! functionhooks
+popupalert
+!! endfunctionhooks
+
+!! test
+popupalert empty
+!! wikitext
+{{#popupalert:}}
+!! html
+<div style="display: none" class="popup-alerts-source" data-hash="68b329da9893e34099c7d8ad5cb9c940" data-expire="0">
+</div>
+!! end
+
+!! test
+popupalert test text
+!! wikitext
+{{#popupalert:test}}
+!! html
+<div style="display: none" class="popup-alerts-source" data-hash="15fcc2932ee42e29f5ba286924ab574a" data-expire="0">
+test</div>
+!! end
+
+
+!! test
+popupalert test wikitext
+!! wikitext
+{{#popupalert:'''test'''}}
+!! html
+<div style="display: none" class="popup-alerts-source" data-hash="9faec2af1943d9761408f191ce3c92d5" data-expire="0">
+<b>test</b></div>
+!! end
+
+!! test
+popupalert test expire argument
+!! wikitext
+{{#popupalert:test|10}}
+!! html
+<div style="display: none" class="popup-alerts-source" data-hash="15fcc2932ee42e29f5ba286924ab574a" data-expire="10">
+test</div>
+!! end

@@ -4,6 +4,7 @@
 
 	/**
 	 * Popup window class
+	 *
 	 * @class
 	 * @constructor
 	 *
@@ -19,13 +20,29 @@
 	}
 
 	/**
+	 * Calculates days left from expire
+	 *
+	 * @param {number} expire
+	 * @return {number}
+	 * @static
+	 */
+	PopupAlert.getDaysLeft = function ( expire ) {
+		return Math.floor( expire / 60 / 24 );
+	};
+
+	/**
 	 * Generates popup body and adds it into the dom
+	 *
 	 */
 	PopupAlert.prototype.initialize = function () {
+		this.render();
+	};
+
+	PopupAlert.prototype.render = function () {
 		var template, html, days, daysLeft;
 		days = null;
 		if ( this.expire ) {
-			daysLeft = ( Math.floor( this.expire / 60 / 24 ) );
+			daysLeft = PopupAlert.getDaysLeft( this.expire );
 			if ( daysLeft ) {
 				days = mw.msg( 'popupalerts-expiration-info', daysLeft );
 			}
@@ -44,6 +61,7 @@
 
 	/**
 	 * Tries to display the popup
+	 *
 	 * @param {string} prefix
 	 */
 	PopupAlert.prototype.tryDisplay = function ( prefix ) {
@@ -57,6 +75,7 @@
 
 	/**
 	 * Schedules the popup block display
+	 *
 	 */
 	PopupAlert.prototype.display = function () {
 		setTimeout( this.showPopup.bind( this ), 0 );
@@ -64,6 +83,7 @@
 
 	/**
 	 * Close marker click event handler
+	 *
 	 * @param {Event} event
 	 */
 	PopupAlert.prototype.onClose = function ( event ) {
@@ -73,6 +93,7 @@
 
 	/**
 	 * Closes the popup block
+	 *
 	 */
 	PopupAlert.prototype.closePopup = function () {
 		this.$popup.removeClass( 'popup-alerts-wrapper--visible' );
@@ -81,6 +102,7 @@
 
 	/**
 	 * Displays the popup block
+	 *
 	 */
 	PopupAlert.prototype.showPopup = function () {
 		this.$popup.addClass( 'popup-alerts-wrapper--visible' );
