@@ -14,13 +14,16 @@
 		"ve": false
 	},
 	"rules": {
-		"linebreak-style": "off",
+		"jsdoc/no-undefined-types": "off",
+		"jsdoc/require-param-type": "off",
+		"max-len": "off",
+		"no-jquery/no-global-selector": "off",
+		"no-jquery/no-parse-html-literal": "off",
 		"no-new": "off",
+		"no-undef": "off",
 		"quote-props": [
 			"error",
 			"as-needed"
-		],
-		"max-len": "off",
-		"no-jquery/no-global-selector": "off"
+		]
 	}
 }

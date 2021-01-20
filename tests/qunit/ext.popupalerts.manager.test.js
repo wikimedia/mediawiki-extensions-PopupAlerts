@@ -4,16 +4,18 @@
 
 	/**
 	 * Generates short random string
-	 * @returns {string}
+	 *
+	 * @return {string}
 	 */
 	function getRandomString() {
-		return Math.random().toString(36).substring(7);
+		return Math.random().toString( 36 ).substring( 7 );
 	}
 
 	/**
 	 * Generates random int
+	 *
 	 * @param max
-	 * @returns {number}
+	 * @return {number}
 	 */
 	function getRandomInt( max ) {
 		return Math.floor( Math.random() * Math.floor( max ) );
@@ -21,11 +23,12 @@
 
 	/**
 	 * Generates random mocked PopupAlert object
-	 * @returns {{expire: number, tryDisplay: PopupAlert.tryDisplay, isVisible: boolean, hash: string, content: string}}
+	 *
+	 * @return {{expire: number, tryDisplay: PopupAlert.tryDisplay, isVisible: boolean, hash: string, content: string}}
 	 */
 	function getMockPopup() {
 		return {
-			tryDisplay: function() {
+			tryDisplay: function () {
 				this.isVisible = true;
 			},
 			isVisible: false,
@@ -37,17 +40,18 @@
 
 	/**
 	 * Forges mock source jQuery object
-	 * @returns {*|jQuery}
+	 *
+	 * @return {*|jQuery}
 	 */
 	function getMockSource() {
-		return $('<div/>')
-			.prop('data-hash', getRandomString() )
-			.prop('data-expire', getRandomInt() )
+		return $( '<div/>' )
+			.prop( 'data-hash', getRandomString() )
+			.prop( 'data-expire', getRandomInt() )
 			.html( getRandomString() );
 	}
 
 	QUnit.module( 'ext.popupalerts.manager', {
-		beforeEach() {
+		beforeEach: function () {
 			manager = new mw.PopupAlertsManager();
 		}
 	} );
@@ -67,19 +71,19 @@
 		var popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
 		manager.popupSources = popups;
 		manager.maybeDisplay();
-		assert.strictEqual( popups[0].isVisible, true );
+		assert.strictEqual( popups[ 0 ].isVisible, true );
 	} );
 
 	QUnit.test( 'maybeDisplay with multiple popups negative', function ( assert ) {
 		var popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
 		manager.popupSources = popups;
 		manager.maybeDisplay();
-		assert.strictEqual( popups[1].isVisible, false );
+		assert.strictEqual( popups[ 1 ].isVisible, false );
 	} );
 
 	QUnit.test( 'forgePopupAlert', function ( assert ) {
-		var $source = getMockSource();
-		var popup = manager.forgePopupAlert( $source );
+		var $source = getMockSource(),
+			popup = manager.forgePopupAlert( $source );
 		assert.strictEqual( 'object', typeof popup );
 	} );
 
