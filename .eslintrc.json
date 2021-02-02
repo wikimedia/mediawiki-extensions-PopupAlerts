@@ -20,10 +20,6 @@
 		"no-jquery/no-global-selector": "off",
 		"no-jquery/no-parse-html-literal": "off",
 		"no-new": "off",
-		"no-undef": "off",
-		"quote-props": [
-			"error",
-			"as-needed"
-		]
+		"no-undef": "off"
 	}
 }
