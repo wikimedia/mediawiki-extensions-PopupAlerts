@@ -15,13 +15,12 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/wikiworks42/popupalerts#readme",
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.17.0",
+		"eslint-config-wikimedia": "0.18.1",
 		"eslint-plugin-jquery": "^1.5.1",
 		"grunt": "1.3.0",
 		"grunt-banana-checker": "0.9.0",
 		"grunt-eslint": "23.0.0",
 		"grunt-stylelint": "0.16.0",
-		"stylelint": "13.9.0",
 		"stylelint-config-wikimedia": "0.10.3"
 	}
 }
