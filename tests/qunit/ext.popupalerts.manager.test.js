@@ -14,11 +14,11 @@
 	/**
 	 * Generates random int
 	 *
-	 * @param max
+	 * @param {number} max
 	 * @return {number}
 	 */
 	function getRandomInt( max ) {
-		return Math.floor( Math.random() * Math.floor( max ) );
+		return Math.floor( Math.random() * max );
 	}
 
 	/**
@@ -34,7 +34,7 @@
 			isVisible: false,
 			hash: getRandomString(),
 			content: getRandomString(),
-			expire: getRandomInt()
+			expire: getRandomInt( 100 )
 		};
 	}
 
@@ -46,7 +46,7 @@
 	function getMockSource() {
 		return $( '<div/>' )
 			.prop( 'data-hash', getRandomString() )
-			.prop( 'data-expire', getRandomInt() )
+			.prop( 'data-expire', getRandomInt( 100 ) )
 			.html( getRandomString() );
 	}
 

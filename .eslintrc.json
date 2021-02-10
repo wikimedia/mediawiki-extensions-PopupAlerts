@@ -15,7 +15,6 @@
 	},
 	"rules": {
 		"jsdoc/no-undefined-types": "off",
-		"jsdoc/require-param-type": "off",
 		"max-len": "off",
 		"no-jquery/no-global-selector": "off",
 		"no-jquery/no-parse-html-literal": "off",
