@@ -8,7 +8,7 @@ hence reset the "already-seen" markers.
 
 # Requirements
 
-* Mediawiki 1.30+
+* Mediawiki 1.31+
 
 # Installation
 

@@ -8,7 +8,7 @@
 	"license-name": "MIT",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.30.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"ExtensionMessagesFiles": {
 		"PopupAlertsMagic": "PopupAlerts.magic.php"
