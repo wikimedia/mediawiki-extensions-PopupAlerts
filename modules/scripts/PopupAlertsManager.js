@@ -68,7 +68,7 @@
 			self = this;
 		if ( $sources.length ) {
 			$sources.each( function ( i, source ) {
-				self.popupSources.push( this.forgePopupAlert( source ) );
+				self.popupSources.push( self.forgePopupAlert( source ) );
 			} );
 		}
 	};
