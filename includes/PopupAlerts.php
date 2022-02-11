@@ -37,7 +37,7 @@ class PopupAlerts {
 			'data-expire' => $expire
 		], $content );
 
-		$parser->getOutput()->addModules( 'ext.popupalerts.main' );
+		$parser->getOutput()->addModules( [ 'ext.popupalerts.main' ] );
 
 		return $html;
 	}
