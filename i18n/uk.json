@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"DDPAT"
+			"DDPAT",
+			"Ice bulldog"
 		]
 	},
 	"popupalerts-desc": "Дозволяє вставляти спливаюче вікно на вікісторінку за допомогою розмітки.",
