@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ex-Diktator"
+		]
+	},
+	"popupalerts-desc": "אפשרות להוסיף חלון קופץ לדף ויקי באמצעות שפת סימון.",
+	"popupalerts-expiration-info": "בפעם הבאה, החלון הקופץ הזה יוצג אחרי {{PLURAL:$1|יום|יומיים|$1 ימים}}."
+}
