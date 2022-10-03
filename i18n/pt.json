@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"popupalerts-desc": "Permite inserir uma janela flutuante numa página da wiki usando notação própria.",
+	"popupalerts-expiration-info": "Da próxima vez, esta janela flutuante será apresentada após $1 {{PLURAL:$1|dia|dias}}."
+}
