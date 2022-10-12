@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"popupalerts-desc": "Permitte inserer un fenestra emergente in un pagina wiki usante un notation proprie.",
+	"popupalerts-expiration-info": "Le proxime vice que iste fenestra emergente apparera es post $1 die{{PLURAL:$1||s}}."
+}
