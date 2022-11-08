@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"popupalerts-desc": "يسمح بإدراج نافذة منبثقة في صفحة wiki باستخدام العلامات.",
+	"popupalerts-expiration-info": "في المرة القادمة سيتم عرض هذه النافذة المنبثقة بعد $1 {{PLURAL:$1| يوم | أيام}}."
+}
