@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"popupalerts-desc": "Omogoča vstavitev pojavnega okna v viki stran z označevanjem.",
+	"popupalerts-expiration-info": "Naslednjič bo to pojavno okno prikazano po $1 {{PLURAL:$1|dnevu|dneh}}."
+}
