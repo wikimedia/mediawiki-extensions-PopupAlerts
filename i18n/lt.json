@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"popupalerts-expiration-info": "Kitą kartą šis iššokantis pranešimas bus parodytas po $1 {{PLURAL:$1|dienos|dienų}}."
+}
