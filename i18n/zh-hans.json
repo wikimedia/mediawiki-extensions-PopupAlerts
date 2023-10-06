@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"StarrySky",
+			"Xyb",
 			"Xzonn"
 		]
 	},
 	"popupalerts-desc": "允许使用标记将弹出窗口插入 wiki 页面。",
-	"popupalerts-expiration-info": "下次此弹出窗口将在$1天之后显示。"
+	"popupalerts-expiration-info": "下次此弹出窗口将在$1{{PLURAL:$1|天}}之后显示。"
 }
