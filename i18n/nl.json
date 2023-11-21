@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"popupalerts-desc": "Maakt het mogelijk om een pop-upvenster in een wikipagina in te voegen met behulp van een eigen notatie.",
+	"popupalerts-expiration-info": "De volgende keer wordt deze pop-up weergegeven na $1 {{PLURAL:$1|dag|dagen}}."
+}
