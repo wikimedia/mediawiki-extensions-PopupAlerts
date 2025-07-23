@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"popupalerts-desc": "Permite inserir unha ventá emerxente nunha páxina do wiki usando etiquetas.",
+	"popupalerts-expiration-info": "A próxima vez, esta ventá emerxente mostrarase {{PLURAL:$1|transcorrido un día|transcorridos $1 días}}."
+}
