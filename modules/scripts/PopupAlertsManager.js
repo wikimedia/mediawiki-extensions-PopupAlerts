@@ -64,10 +64,10 @@
 	 *
 	 */
 	PopupAlertsManager.prototype.findPopups = function () {
-		var $sources = $( '.popup-alerts-source' ),
+		const $sources = $( '.popup-alerts-source' ),
 			self = this;
 		if ( $sources.length ) {
-			$sources.each( function ( i, source ) {
+			$sources.each( ( i, source ) => {
 				self.popupSources.push( self.forgePopupAlert( source ) );
 			} );
 		}

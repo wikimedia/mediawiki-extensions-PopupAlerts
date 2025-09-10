@@ -39,7 +39,7 @@
 	};
 
 	PopupAlert.prototype.render = function () {
-		var template, html, days, daysLeft;
+		let template, html, days, daysLeft;
 		days = null;
 		if ( this.expire ) {
 			daysLeft = PopupAlert.getDaysLeft( this.expire );
@@ -65,7 +65,7 @@
 	 * @param {string} prefix
 	 */
 	PopupAlert.prototype.tryDisplay = function ( prefix ) {
-		var expire, cookie = mw.cookie.get( prefix + this.hash );
+		let expire, cookie = mw.cookie.get( prefix + this.hash );
 		if ( cookie === null ) {
 			expire = this.expire ? this.expire : 60 * 60 * 24 * 30 * 12 * 100; // 100 years!
 			mw.cookie.set( prefix + this.hash, 'true', { expires: expire } );

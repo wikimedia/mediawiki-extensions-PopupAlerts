@@ -1,6 +1,6 @@
 ( function ( $, mw ) {
 
-	var manager;
+	let manager;
 
 	/**
 	 * Generates short random string
@@ -56,33 +56,33 @@
 		}
 	} );
 
-	QUnit.test( 'maybeDisplay with empty set', function ( assert ) {
+	QUnit.test( 'maybeDisplay with empty set', ( assert ) => {
 		manager.maybeDisplay();
 		assert.strictEqual( manager.activePopup, null );
 	} );
 
-	QUnit.test( 'maybeDisplay with single popup', function ( assert ) {
+	QUnit.test( 'maybeDisplay with single popup', ( assert ) => {
 		manager.popupSources.push( getMockPopup() );
 		manager.maybeDisplay();
 		assert.strictEqual( manager.activePopup.isVisible, true );
 	} );
 
-	QUnit.test( 'maybeDisplay with multiple popups', function ( assert ) {
-		var popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
+	QUnit.test( 'maybeDisplay with multiple popups', ( assert ) => {
+		const popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
 		manager.popupSources = popups;
 		manager.maybeDisplay();
 		assert.strictEqual( popups[ 0 ].isVisible, true );
 	} );
 
-	QUnit.test( 'maybeDisplay with multiple popups negative', function ( assert ) {
-		var popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
+	QUnit.test( 'maybeDisplay with multiple popups negative', ( assert ) => {
+		const popups = [ getMockPopup(), getMockPopup(), getMockPopup() ];
 		manager.popupSources = popups;
 		manager.maybeDisplay();
 		assert.strictEqual( popups[ 1 ].isVisible, false );
 	} );
 
-	QUnit.test( 'forgePopupAlert', function ( assert ) {
-		var $source = getMockSource(),
+	QUnit.test( 'forgePopupAlert', ( assert ) => {
+		const $source = getMockSource(),
 			popup = manager.forgePopupAlert( $source );
 		assert.strictEqual( 'object', typeof popup );
 	} );

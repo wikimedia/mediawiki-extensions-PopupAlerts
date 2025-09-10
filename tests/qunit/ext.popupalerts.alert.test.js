@@ -1,9 +1,9 @@
 ( function ( $, mw ) {
 	QUnit.module( 'ext.popupalerts.alert' );
 
-	QUnit.test( 'getDaysLeft', function ( assert ) {
+	QUnit.test( 'getDaysLeft', ( assert ) => {
 
-		var days = 10,
+		const days = 10,
 			expire = days * 60 * 24, // 10 days
 			result = mw.PopupAlert.getDaysLeft( expire );
 
