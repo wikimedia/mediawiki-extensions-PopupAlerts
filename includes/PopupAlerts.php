@@ -2,7 +2,7 @@
 
 namespace PopupAlerts;
 
-use Html;
+use MediaWiki\Html\Html;
 use Parser;
 use PPFrame;
 
