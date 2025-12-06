@@ -15,7 +15,7 @@
 	"license": "ISC",
 	"homepage": "https://bitbucket.org/wikiworks42/popupalerts#readme",
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.32.2",
+		"eslint-config-wikimedia": "0.32.3",
 		"eslint-plugin-jquery": "^1.5.1",
 		"grunt": "1.6.1",
 		"grunt-banana-checker": "0.13.0",
