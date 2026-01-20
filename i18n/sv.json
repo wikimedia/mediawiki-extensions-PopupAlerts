@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"popupalerts-desc": "Tillåter att infoga ett popup-fönster på en wikisida med hjälp av markup.",
+	"popupalerts-expiration-info": "Nästa gång visas denna popup efter $1 {{PLURAL:$1|dag|dagar}}."
+}
