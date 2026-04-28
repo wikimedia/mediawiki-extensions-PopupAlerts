@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tensama0415"
+		]
+	},
+	"popupalerts-desc": "마크업을 사용하여 위키 문서에 팝업 창을 삽입할 수 있습니다.",
+	"popupalerts-expiration-info": "다음번에 이 팝업은 $1 {{PLURAL:$1|일}} 후에 표시됩니다."
+}
