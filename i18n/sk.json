@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"popupalerts-desc": "Umožňuje vložiť do wiki stránky vyskakovacie okno pomocou značiek.",
+	"popupalerts-expiration-info": "Nabudúce sa toto vyskakovacie okno zobrazí o $1 {{PLURAL:$1|deň|dni|dní}}."
+}
